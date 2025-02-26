@@ -1,11 +1,9 @@
 from os import path
 import sys
 
-from setuptools import find_packages
-from setuptools import setup
+from setuptools import find_packages, setup
 
 from obp.version import __version__
-
 
 here = path.abspath(path.dirname(__file__))
 sys.path.insert(0, path.join(here, "obp"))
@@ -29,16 +27,16 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     install_requires=[
-        "matplotlib>=3.4.3",
+        "matplotlib>=3.8.0",
         "mypy-extensions>=0.4.3",
-        "numpy>=1.21.2",
-        "pandas>=1.3.2",
-        "pyyaml>=6.0.0",
-        "seaborn>=0.11.2",
-        "scikit-learn>=1.0.2",
-        "scipy>=1.7.3",
-        "torch>=1.9.0",
-        "tqdm>=4.62.2",
+        "numpy>=1.25.0",
+        "pandas>=2.1.0",
+        "pyyaml>=6.0.1",
+        "seaborn>=0.12.2",
+        "scikit-learn>=1.6.1",
+        "scipy>=1.15.2",
+        "torch>=2.6.0",
+        "tqdm>=4.65.0",
         "pyieoe>=0.1.1",
         "pingouin>=0.4.0",
     ],
@@ -50,10 +48,10 @@ setup(
     include_package_data=True,
     classifiers=[
         "Intended Audience :: Science/Research",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Mathematics",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
