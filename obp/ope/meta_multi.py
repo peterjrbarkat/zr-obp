@@ -504,7 +504,7 @@ class MultiLoggersOffPolicyEvaluation(OffPolicyEvaluation):
         sns.barplot(
             data=estimated_round_rewards_df,
             ax=ax,
-            ci=100 * (1 - alpha),
+            errorbar=('ci', 100 * (1 - alpha)),
             n_boot=n_bootstrap_samples,
             seed=random_state,
         )
@@ -778,7 +778,7 @@ class MultiLoggersOffPolicyEvaluation(OffPolicyEvaluation):
             sns.barplot(
                 data=estimated_round_rewards_df,
                 ax=ax,
-                ci=100 * (1 - alpha),
+                errorbar=('ci', 100 * (1 - alpha)),
                 n_boot=n_bootstrap_samples,
                 seed=random_state,
             )
